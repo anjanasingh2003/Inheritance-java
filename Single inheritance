@@ -29,3 +29,47 @@ public class Inheritance
         System.out.println();
     }
 }
+
+============================================== Example-2 ===================================
+class vehicle {
+    void model() {
+        String type = "4 wheeler";
+        String color = "black";
+        int cost = 60000;
+
+    }
+
+    void start() {
+        System.out.println("car is started");
+    }
+
+    void run() {
+        System.out.println("car is running ");
+    }
+
+    void stop() {
+        System.out.println("car is stopping");
+    }
+
+}
+
+class car extends vehicle {
+    void carmodle() {
+        System.out.println("speed limit of car is 120km/hr");
+
+    }
+
+}
+
+public class Inheritance {
+
+    public static void main(String[] args) {
+        car c1 = new car();
+        c1.model();
+        c1.start();
+        c1.run();
+        c1.stop();
+
+    }
+}
+
