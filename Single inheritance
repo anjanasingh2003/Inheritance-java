@@ -1,0 +1,31 @@
+class father
+{
+    void eat()
+    {
+        String name = "Bhanupratap";
+    }
+
+    void sleep()
+    {
+        String name= "Anjana";
+    }
+}
+
+class child extends father
+{
+    String name = "Heera Lal";
+}
+
+public class Inheritance
+ {
+    public static void main(String[] args) 
+    {
+        child c1=new child();
+        c1.eat();
+        System.out.println(c1.name);
+
+        father f1=new father();
+        f1.eat();
+        System.out.println();
+    }
+}
