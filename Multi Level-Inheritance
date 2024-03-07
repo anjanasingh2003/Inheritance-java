@@ -1,0 +1,61 @@
+class grandFather
+{
+void eat()
+{
+System.out.println("Eating");
+}
+
+void listen()
+{
+System.out.println("Radio listen");
+}
+}
+
+class father extends grandFather
+{
+void watch()
+{
+System.out.println("Watching TV");
+}
+
+void use()
+{
+System.out.println("use moble phone");
+}
+}
+
+class Son extends father
+{
+void play()
+{
+System.out.println("playing");
+}
+
+void reading()
+{
+System.out.println("chater one is complete reading");
+}
+}
+
+class daugther extends Son
+{
+void read()
+{
+System.out.println("Reading");
+}
+}
+
+public class Inheritance
+{
+public static void main(String[] args)
+{
+daugther d = new daugther();
+d.eat();
+d.listen();
+d.play();
+d.reading();
+d.read();
+d.watch();
+d.use();
+}
+}
